@@ -4,21 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script>.
 </head>
 <body>
-    <script>
-        let r, c, a, v, pi;
-        r = parseFloat(prompt("Digite o raio do circulo","Raio Circulo"));
-        pi = Math.PI
-        c = 2 * pi * r;
-        a = pi * Math.pow(r, 2);
-        v = (3/4) * pi * Math.pow(r, 3);
-        document.write(`O comprimento da esfera é: ${c}<br>`)
-        document.write(`A área da esfera é: ${a}<br>`)
-        document.write(`O volume da esfera é: ${v}<br>`)
-        console.log(`O comprimento da esfera é: ${c}<br>`)
-        console.log(`A área da esfera é: ${a}<br>`)
-        console.log(`O volume da esfera é: ${v}<br>`)
-    </script>
+    <div class="calc">
+        <div class="resultado">
+            <script>
+                document.write(`<div class="resultado">O comprimento da esfera é: ${c}<br></div>`)
+                document.write(`<div class="resultado">A área da esfera é: ${a}<br></div>`)
+                document.write(`<div class="resultado">O volume da esfera é: ${v}<br></div>`)
+            </script>
+        </div>
+
+        <div class="teclas">
+            <div class="tecla">
+                9
+            </div>
+            <div class="tecla">
+                8
+            </div>
+            <div class="tecla">
+                7
+            </div>
+            <div class="tecla-laterais">
+                ÷
+            </div>
+
+            <div class="tecla">
+                6
+            </div>
+            <div class="tecla">
+                5
+            </div>
+            <div class="tecla">
+                4
+            </div>
+            <div class="tecla-laterais">
+                x
+            </div>
+
+            <div class="tecla">
+                3
+            </div>
+            <div class="tecla">
+                2
+            </div>
+            <div class="tecla">
+                1
+            </div>
+            <div class="tecla-laterais">
+                -
+            </div>
+            
+            
+            <div class="tecla">
+                0
+            </div>
+            <div class="tecla">
+                .
+            </div>
+            <div class="tecla">
+                =
+            </div>
+            <div class="tecla-laterais">
+                +
+            </div>
+        </div>
+        <!--<div class="teclas-laterais">
+            <div class="tecla">
+                x
+            </div>
+            <div class="tecla">
+                -
+            </div>
+            <div class="soma">
+                +
+            </div>
+        </div>-->
+    </div>
 </body>
 </html>
